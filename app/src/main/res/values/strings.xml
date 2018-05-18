@@ -2,6 +2,23 @@
     <string name="app_name">News_app</string>
     <string name="no_internet">No internet connection.</string>
     <string name="no_news">No news found.</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Settings</string>
+    <string name="settings_num_of_news_label">Number of news</string>
+    <string name="settings_num_of_news_key" translatable="false">num_of_news</string>
+    <string name="settings_num_of_news_default" translatable="false">5</string>
 
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_most_recent_value</string>
+
+    <!-- Label for order-by magnitude option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_title_label">Title</string>
+    <string name="settings_order_by_title_value" translatable="false">webTitle</string>
+
+    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_most_recent_label">Most Recent</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">webPublicationDate</string>
 
 </resources>
