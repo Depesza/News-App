@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         uriBuilder.appendQueryParameter("page-size", numOfNews);
-//        uriBuilder.appendQueryParameter("tag", "politics/politics");
+        uriBuilder.appendQueryParameter("show-tags", "contributor");
         uriBuilder.appendQueryParameter("api-key", "test");
         uriBuilder.appendQueryParameter("order-by", orderBy);
 
