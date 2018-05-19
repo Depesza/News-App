@@ -12,6 +12,7 @@ import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -98,10 +99,12 @@ public class MainActivity extends AppCompatActivity
 
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
-        uriBuilder.appendQueryParameter("q", numOfNews);
-        uriBuilder.appendQueryParameter("tag", "politics/politics");
+        uriBuilder.appendQueryParameter("page-size", numOfNews);
+//        uriBuilder.appendQueryParameter("tag", "politics/politics");
         uriBuilder.appendQueryParameter("api-key", "test");
-        uriBuilder.appendQueryParameter("orderBy", orderBy);
+        uriBuilder.appendQueryParameter("order-by", orderBy);
+
+        Log.v("cos", uriBuilder.toString());
 
         return new NewsLoader(this, uriBuilder.toString());
     }
